@@ -36,7 +36,6 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
-        {
             $table = Author::create([
                 "name" => $request->name,
                 "date_of_birth" => $request->date_of_birth,
@@ -50,7 +49,6 @@ class AuthorController extends Controller
                 'message' => 'data berhasil disimpan',
                 'data' => $table
             ], 201);
-        }
     }
 
     /**
